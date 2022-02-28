@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pg-container">
+        <div class="pg-header">
+            <div class="pg-header-content">
+                <a href="index.html"><img src="./img/my-img.jpg" alt="" class="pg-profile" style="margin-top: 5px;"></a>
+                <p style="margin-left: 15px;">32기 이수광</p>
+            </div>
+        </div>
+        <div class="pg-main">
+            <img src="./img/item2.png" alt="" style="object-fit: contain; background-color: skyblue;">
+        </div>
+        <div class="pg-text" style="padding: 10px;">
+                <button class="heart-bt">♥</button>
+            <p style="font-family: 'CBNUJIKJI';">국비지원으로 디자인을 배웠습니다.<br>
+                쇼핑몰이나 예약등 홈페이지 관련 업무를 희망했는데 우연히 웹개발자란 직업을 알게되었고
+                단순히 이미지와 레이아웃만 짜는게 아닌 직접 구동하는 사이트를 만드는 일이 더욱 흥미롭고 가치있다 생각해
+                프론트엔드 개발자를 꿈꾸기 시작했습니다.</p>
+        </div>
+    </div>
+
+    <script>
+        var heart = document.querySelectorAll('.heart-bt');
+        
+        function clickMenuHandler() {   
+                for (var i = 0; i < heart.length; i++){
+                 heart[i].classList.remove('bt-active');
+             }
+             this.classList.add('bt-active');
+         }
+        
+         for (var i = 0; i < heart.length; i++){
+             heart[i].addEventListener('click', clickMenuHandler);
+         }
+    </script>
+</body>
+</html>

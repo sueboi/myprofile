@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pg-container">
+        <div class="pg-header">
+            <div class="pg-header-content">
+                <a href="index.html"><img src="./img/my-img.jpg" alt="" class="pg-profile" style="margin-top: 5px;"></a>
+                <p style="margin-left: 15px;">32기 이수광</p>
+            </div>
+        </div>
+        <div class="pg-main">
+            <img src="./img/item1.jpg" alt="">
+        </div>
+        <div class="pg-text" style="padding: 10px;">
+                <button class="heart-bt">♥</button>
+            <p style="font-family: 'CBNUJIKJI';">안녕하세요 위코더 여러분 ! 저는 이번에 32기에 합류하기 위해 대구에서 올라온 이수광이라 합니다. 프론트엔드 개발자를 꿈꾸고있어요! 😄</p>
+        </div>
+    </div>
+
+    <script>
+        var heart = document.querySelectorAll('.heart-bt');
+        
+        function clickMenuHandler() {   
+                for (var i = 0; i < heart.length; i++){
+                 heart[i].classList.remove('bt-active');
+             }
+             this.classList.add('bt-active');
+         }
+        
+         for (var i = 0; i < heart.length; i++){
+             heart[i].addEventListener('click', clickMenuHandler);
+         }
+    </script>
+</body>
+</html>

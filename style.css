@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none 
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manse';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Manse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container header {
+    width: 100%;
+    height: 60px;
+    font-family: 'Manse';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.profile {
+    display: flex;
+    justify-content:space-between;
+}
+
+.profile p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul img {
+    width:60%;
+    height: auto;
+}
+
+.main-container {
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-box {
+    width: 220px;
+    height: 220px;
+    border-radius: 70%;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text {
+    float: left;
+    margin-left: 80px;
+}
+
+.profile-highlight ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: -30px;
+    padding: 0;
+    width: 1024px;
+}
+
+.profile-highlight ul li {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 70%;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.profile-highlight ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.content-item {
+    padding: 20px;
+}
+
+.content-item img {
+    width: 300px;
+    height: 300px;
+}
+
+footer {
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.foot {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.profile-highlight img {
+    transition: all 4s;
+}
+
+.profile-highlight img:hover {
+    transform: rotate(60deg);
+    transition: all 4s;
+}
+
+.content-item:hover {
+    opacity: 50%;
+    transition: all 2s;
+}
+
+/* 여기서부터 페이지 스타일 */
+
+@font-face {
+    font-family: 'ROKAFSlabSerifBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSlabSerifBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CBNUJIKJI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/CBNUJIKJI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.pg-container {
+    width: 614px;
+    margin: 0 auto;
+    border: 1.5px solid rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pg-header-content {
+    display: flex;
+    padding: 10px;
+}
+
+.pg-profile {
+    width: 42px;
+    height: 42px;
+    border-radius: 70%;
+    border: 3px solid #F14394;
+}
+
+.pg-main {
+    width: 614px;
+    height: 614px;
+}
+
+.pg-main img {
+    width: 614px;
+    height:614px;
+}
+
+.heart-bt {
+    background:none;
+    border: none;
+}
+
+.heart-bt {
+    font-family: 'ROKAFSlabSerifBold';
+    font-size: 25px;
+    color: black;
+    transition: all 1s;
+}
+
+.heart-bt:hover {
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.bt-active {
+    color: red;
+}
